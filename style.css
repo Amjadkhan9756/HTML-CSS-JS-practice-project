@@ -277,3 +277,23 @@ p {
 .campus>div:hover {
     box-shadow: 0 0 15px black;
 }
+
+.about {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient( rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("image\about.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.paragraph {
+    margin-top: 80px;
+    padding: 50px;
+}
+
+.paragraph p,
+h1 {
+    margin: 20px;
+    padding: 20px;
+}
