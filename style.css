@@ -283,7 +283,7 @@ p {
     justify-content: center;
     background-image: linear-gradient( rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("image\about.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     position: relative;
 }
 
@@ -296,4 +296,30 @@ p {
 h1 {
     margin: 20px;
     padding: 20px;
+}
+
+.study {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.study h1:hover {
+    color: brown
+}
+
+body {
+    background-color: lightgray;
+}
+
+.contact {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
 }
