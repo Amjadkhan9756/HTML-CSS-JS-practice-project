@@ -4,102 +4,264 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-
+    <title>University Website</title>
+    <style>
+        /* Basic Reset */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        /* HEADER SECTION */
+        
+        .header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background-color: #222;
+        }
+        
+        .header nav a img {
+            width: 120px;
+        }
+        
+        .nav-links ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .nav-links ul li {
+            margin-left: 20px;
+        }
+        
+        .search-container input[type="text"] {
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+        }
+        /* MAIN CONTENT */
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 5%;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: #fff;
+            text-align: center;
+        }
+        
+        .photo-wrapper {
+            flex: 1 1 300px;
+            padding: 1rem;
+        }
+        
+        .photo-wrapper img {
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .content {
+            flex: 1 1 500px;
+            padding: 1rem;
+        }
+        
+        .content h1,
+        .content h2,
+        .content h3 {
+            margin-bottom: 1rem;
+        }
+        /* UNIVERSITY SECTION */
+        
+        .University {
+            background-color: #444;
+            color: #eee;
+            padding: 2rem 5%;
+            text-align: center;
+        }
+        
+        .University h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .University p {
+            font-size: 1.1rem;
+            color: #ddd;
+        }
+        /* COURSE SECTION */
+        
+        .course {
+            text-align: center;
+            padding: 2rem 5%;
+        }
+        
+        .course h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .count {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 0 5% 3rem;
+        }
+        
+        .count>div {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .count>div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .count h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .count p {
+            font-size: 1rem;
+        }
+        /* CAMPUS SECTION */
+        
+        .campus {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem 5%;
+            text-align: center;
+        }
+        
+        .campus img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .campus img:hover {
+            transform: scale(1.05);
+        }
+        /* ACCESSIBILITY */
+        
+        .visually-hidden {
+            position: absolute;
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            height: 1px;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 1px;
+        }
+        /* RESPONSIVE */
+        
+        @media (max-width: 768px) {
+            .header nav {
+                flex-direction: column;
+            }
+            .nav-links ul {
+                flex-direction: column;
+            }
+            .nav-links ul li {
+                margin: 10px 0;
+            }
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 
 <body>
-
-    <!-- This is not completed yet  -->
 
     <section class="header">
         <nav>
             <a href="index.html"><img src="image/logo.png" alt="Logo"></a>
             <div class="nav-links">
-
-
-
                 <ul>
+
 
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="University.html">University</a></li>
                     <li><a href="CONTACT.html">CONTACT</a></li>
-
                     <li class="search-container">
                         <label for="search-input" class="visually-hidden">Search</label>
                         <input type="text" id="search-input" placeholder="Search..." name="search">
                     </li>
-
-
                 </ul>
-
             </div>
-
-            </div>
-
         </nav>
 
         <div class="container">
             <div class="photo-wrapper">
-                <img src="image/IMG_20240919_145329_007.jpg" class="photo" alt="Static Photo">
+                <img src="image/IMG_20240919_145329_007.jpg" alt="Static Photo">
             </div>
             <div class="content">
                 <h1>I am Amjad Khan</h1>
-
-
                 <h1>I am in the second year of my B.Tech</h1>
                 <h2>I have now gained a skill: <br/> MERN Full Stack Web Development</h2>
                 <h3>I am also working on DSA problems <br/> and moving forward to learn DevOps</h3>
-
-
             </div>
         </div>
 
         <div class="University">
-            <pre>
-                 <h1 style="color:beige"> Here is world greatest University Recommendation </h1>
-        <p style="color:grey">There is many type of University in this world.
-But here is Recommendation of Top university</p>
-            
-            </pre>
-
+            <h1>Here is the world's greatest University Recommendation</h1>
+            <p>There are many types of universities in this world.<br> Here is a recommendation of top universities.</p>
         </div>
-
     </section>
 
     <div class="course">
-        <h1> That course we offer in our University</h1>
+        <h1>Courses we offer in our University</h1>
     </div>
     <div class="count">
         <div class="Dip">
-            <h1>Diploma courses</h1>
-            <p>- Diploma in Business Management - Diploma in Digital Marketing</p>
+            <h1>Diploma Courses</h1>
+            <p>- Diploma in Business Management <br> - Diploma in Digital Marketing</p>
         </div>
         <div class="under">
-            <h1> Undergraduate Courses</h1>
-            <p>- B.Tech / B.E. in Computer Science/IT - B.Sc in Computer Science - BCA (Bachelor of Computer Applications)</p>
+            <h1>Undergraduate Courses</h1>
+            <p>- B.Tech / B.E. in Computer Science/IT <br> - B.Sc in Computer Science <br> - BCA (Bachelor of Computer Applications)</p>
         </div>
         <div class="post">
             <h1>Postgraduate Courses</h1>
-            <p>- M.Tech in Computer Science - MCA (Master of Computer Applications) - M.Sc in Data Science</p>
+            <p>- M.Tech in Computer Science <br> - MCA (Master of Computer Applications) <br> - M.Sc in Data Science</p>
         </div>
     </div>
 
     <div class="course">
-        <h1> Our University Capus</h1>
+        <h1>Our University Campus</h1>
     </div>
 
     <div class="campus">
         <div class="imag1">
-            <img src="image\washington.png">
+            <img src="image/washington.png" alt="Washington Campus">
         </div>
         <div class="imag2">
-            <img src="image\newyork.png">
+            <img src="image/newyork.png" alt="New York Campus">
         </div>
         <div class="imag3">
-            <img src="image\london.png">
+            <img src="image/london.png" alt="London Campus">
         </div>
     </div>
 
