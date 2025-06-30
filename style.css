@@ -1,11 +1,12 @@
 /* About section */
 
 .about {
+    background: lightgrey;
+    /* Changed to light grey */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 40px;
-    background: #fff;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -43,7 +44,8 @@
 
 .study {
     margin-top: 40px;
-    background: #fff;
+    background: lightgrey;
+    /* Changed to light grey */
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
